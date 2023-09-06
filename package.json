@@ -1,0 +1,50 @@
+{
+  "name": "ux-web-base",
+  "private": true,
+  "version": "0.0.3",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "lib": "vite build",
+    "build": "vue-tsc && vite build",
+    "build:component": "node ./scripts/build.cjs",
+    "preview": "vite preview",
+    "publish": " bash publish.sh",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "@ux-web-base/components": "workspace:^",
+    "@ux-web-base/utils": "workspace:^",
+    "element-plus": "^2.3.12",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@testing-library/vue": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "@vitest/ui": "^0.34.3",
+    "@vue/test-utils": "^2.4.1",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "fs-extra": "^11.1.1",
+    "husky": "^8.0.3",
+    "jsdom": "^22.1.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "sass": "^1.66.1",
+    "typescript": "^5.0.2",
+    "unplugin-vue-macros": "^2.4.14",
+    "vite": "^4.4.5",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-dts": "^3.5.3",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vitepress": "^1.0.0-rc.10",
+    "vitest": "^0.34.3",
+    "vue-tsc": "^1.8.5"
+  }
+}
