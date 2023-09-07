@@ -1,13 +1,13 @@
 {
   "name": "ux-web-base",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "lib": "vite build",
     "build": "vue-tsc && vite build",
-    "build:component": "node ./scripts/build.cjs",
+    "build:component": "node ./script/build.cjs",
     "preview": "vite preview",
     "publish": " bash publish.sh",
     "test": "vitest",

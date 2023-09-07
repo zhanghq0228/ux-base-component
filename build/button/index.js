@@ -1,30 +1,39 @@
-import { defineComponent as a, resolveComponent as c, openBlock as n, createBlock as r, normalizeProps as i, guardReactiveProps as u, withCtx as _, renderSlot as f, createElementBlock as p } from "vue";
-const m = "u", s = "_Vue3UI", d = (o, e, t) => {
-  P(o, t), o.component(e.name, e);
-}, P = (o, e = { classPrefix: m }) => {
-  o.config.globalProperties[s] = {
-    ...o.config.globalProperties[s] ?? {},
+import { defineComponent as r, resolveComponent as a, openBlock as s, createBlock as _, normalizeProps as i, guardReactiveProps as d, withCtx as u, renderSlot as p, createElementBlock as f } from "vue";
+const m = "u", c = "_Vue3UI", b = (t, e, o) => {
+  g(t, o), t.component(e.name, e);
+}, g = (t, e = { classPrefix: m }) => {
+  t.config.globalProperties[c] = {
+    ...t.config.globalProperties[c] ?? {},
     classPrefix: e.classPrefix
   };
-}, b = { key: 1 }, g = 123, C = /* @__PURE__ */ a({
+}, x = {
+  key: 1,
+  class: "ddd-test"
+}, v = 123, P = /* @__PURE__ */ r({
   __name: "index",
-  setup(o) {
-    return console.log("output->abc", g), (e, t) => {
-      const l = c("el-button");
-      return n(), r(l, i(u(e.$attrs)), {
-        default: _(() => [
-          e.$slots.default ? f(e.$slots, "default", { key: 0 }) : (n(), p("span", b, "按钮"))
+  setup(t) {
+    return console.log("output->abc", v), (e, o) => {
+      const n = a("el-button");
+      return s(), _(n, i(d(e.$attrs)), {
+        default: u(() => [
+          e.$slots.default ? p(e.$slots, "default", { key: 0 }, void 0, !0) : (s(), f("span", x, "按钮"))
         ]),
         _: 3
       }, 16);
     };
   }
-}), k = {
-  install(o, e) {
-    d(o, C, e);
+});
+const C = (t, e) => {
+  const o = t.__vccOpts || t;
+  for (const [n, l] of e)
+    o[n] = l;
+  return o;
+}, k = /* @__PURE__ */ C(P, [["__scopeId", "data-v-e850628b"]]), B = {
+  install(t, e) {
+    b(t, k, e);
   }
 };
 export {
-  C as UxButton,
-  k as default
+  k as UxButton,
+  B as default
 };

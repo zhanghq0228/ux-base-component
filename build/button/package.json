@@ -1,14 +1,14 @@
 {
     "name": "button",
-    "version": "0.0.3",
-    "description": "ux168平台通用组件库",
+    "version": "0.0.4",
+    "description": "Vue3组件库，beta版本仅用来测试发布",
     "main": "index.umd.cjs",
     "module":"index.js",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/xxx"
+      "url": "git+https://xxx"
     },
-    "keywords": ["vue3", "组件库", "UI", "element-plus"],
+    "keywords": ["vue3", "组件库", "UI"],
     "author": "hongqiang",
     "license": "ISC"
   }
